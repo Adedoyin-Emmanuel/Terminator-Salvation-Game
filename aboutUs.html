@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About EmmySoft</title>
+    <link rel="icon" href="favicon.png">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        noscript {
+            width: 500px;
+            height: 150px;
+            background: dodgerblue;
+            border-radius: 20px;
+            font-family: monospace;
+            font-size: 20px;
+            letter-spacing: -1px;
+            font-weight: 600;
+            text-shadow: 1px 1px 1px black;
+            animation: shrink .6s linear 1;
+            display: block;
+            margin: auto;
+            text-align: center;
+            position: absolute;
+            top: 25%;
+            padding-top: 100px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3), -2px 2px 2px rgba(0, 0, 0, 0.5), 2px -2px 2px rgba(0, 0, 0, 0.5), 2px 2px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        body {
+            overflow: hidden;
+        }
+        
+        @keyframes shrink {
+            0% {
+                transform: translateY(-300px) scale(0);
+            }
+            100% {
+                transform: translateY(0px) scale(1);
+            }
+        }
+        
+        #aboutMe {
+            position: absolute;
+            font-family: corbel;
+            font-weight: normal;
+            font-size: 25px;
+            color: white;
+            text-align: center;
+        }
+        
+        @keyframes move {
+            0% {
+                transform: translateY(600px);
+            }
+            100% {
+                transform: translateY(-700px);
+            }
+        }
+        
+        #aboutMe>span {
+            display: block;
+        }
+        
+        #aboutMe {
+            animation: move 18s ease-in-out infinite;
+        }
+        
+        #aboutMe::selection {
+            color: white;
+            background: black;
+        }
+        
+        .backToGame {
+            background-image: url("backToGame.png");
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+        }
+        
+        .backToGame:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="aboutMe" class="aboutMe">
+
+
+
+        <span>TERMINATOR SALVATION.....  </span>
+        <span>Full Game Available On GitHub.</span>
+        <span>Director: Adedoyin Emmanuel Adeniyi</span>
+        <span>Senior Programmer: Adedoyin Emmanuel</span>
+        <span>Created By: EmmySoft Productions</span>
+
+        <span>
+	Initial Game Build Version: 1.0</span>
+        <span>Game Launch Date: 30|10|2021 / 01|10|2021 </span>
+        <span>To Read More About Game, Read The Game Info File</span>
+        <span>Special Thanks To ....</span>
+        <span>Game Developers Studio, Craftpix.net, Open Game Art.org</span>
+        <span>More Thanks To</span>
+        <span>Family, Friends and Others For Great Support And Motivation</span>
+
+        <button class="backToGame" id="backToGame"></button>
+    </div>
+    <noscript>Your Browser Does Not Support Javascript Please Activate It To Play This Game</noscript>
+    <script>
+        var backToGame = document.getElementById("backToGame");
+
+        //add an event to when the button is clicked
+        backToGame.addEventListener("click", () => {
+            //navigate the user back to the game gui
+            location.href = "index.html";
+        });
+
+        //clear the console every second to clear the errors
+        setInterval(() => {
+            console.clear();
+        }, 1000);
+    </script>
+</body>
+<script src="aboutMe.min.js"></script>
+
+</html>

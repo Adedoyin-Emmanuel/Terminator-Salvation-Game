@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.min.css" />
+    <link rel="icon" href="favicon.png">
+    <title>Terminator Salvation</title>
+</head>
+
+<body>
+    <div id="scoreBox">SCORE:</div>
+    <canvas id="canvas">Your browser does not support canvas upgrade your browser to play this game</canvas>
+
+    <!-- this defines the entire game gui -->
+    <div id="gameGUI" class="gameGUI">
+
+        <!-- this defines the game name and the title -->
+        <div id="gameTitleContainer" class="gameTitleContainer">
+            <img src="gameLogo.png" id="gameLogo" />
+            <div id="gameTitle">
+                <!-- this contains the image that represents the game title -->
+            </div>
+        </div>
+
+        <!-- this defines the level selection -->
+        <h3 id="levelSelect">Select A Level To Play...</h3>
+
+        <!-- this defines the game levels itself -->
+        <div id="allGameLevels" class="allGameLevels"></div>
+        <div id="levelOne" class="levels" title="Click To Play Level One...">Easy Street</div>
+        <div id="levelTwo" class="levels" title="Click To Play Level Two...">Coconut Cup</div>
+        <div id="levelThree" class="levels" title="Click To Play Level Three...">Midnight Sprint</div>
+        <div id="levelFour" class="levels" title="Click To Play Level Four...">Chowdler Bowl</div>
+        <div id="levelFive" class="levels" title="Click To Play Level Five...">Tropical Twist</div>
+        <div id="levelSix" class="levels" title="Click To Play Level Six...">Bats Infestation</div>
+        <div id="levelSeven" class="levels" title="Click To Play Level Seven...">Ghost Ride</div>
+        <div id="levelEight" class="levels" title="Click To Play Level Eight...">Hallowen Sqwash</div>
+        <div id="levelNine" class="levels" title="Click To Play Level Nine...">Tidal Rush</div>
+        <div id="levelTen" class="levels" title="Click To Play Level Ten...">Typhoon Trophy</div>
+        <div id="levelEleven" class="levels" title="Click To Play Level Eleven...">Sunshine Sprint</div>
+        <div id="levelTwelve" class="levels" title="Click To Play Level Twelve.">Midnight Fight</div>
+
+
+        <!-- this defines the other game UI like the highscore button, about us button, and the more levels button it is called the GUI footer -->
+
+        <div id="guiFooter" class="guiFooter">
+            <button id="highScore" class="highScore" title="Click To View Your HighScore...">High Score</button>
+            <button id="aboutUs" class="aboutUs" title="Click To Check Game Documentation">About EmmySoft</button>
+            <button id="moreLevels" class="moreLevels" title="Click To Play More Frantic Levels">Frantic Levels</button>
+
+            <div id="copyRight" class="copyRight" title="EmmSoft Games EG games..."><span id="copyRightSign">&copy<span id="creationYear"></div>
+ 		</div>
+     </div>
+</body>
+<script src="sweetAlert2.js"></script>
+<script src="game.min.js"></script>
+<script>
+	var copyRightSignYear=document.getElementById("creationYear"); 
+	var date=new Date();
+
+	creationYear.innerHTML=" 2020-" + date.getFullYear();
+
+
+
+</script>
+<noscript>Please Activate Javascript On Your Browser To Play This Game</noscript>
+
+</html>
